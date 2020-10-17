@@ -25,7 +25,7 @@ namespace BFS_c_sharp
             users.Add(firstUser);
             // first generate and connect users in a star shaped tree
             GenerateTree(firstUser, users, 4);
-
+            
             for (int i = 0; i < users.Count - 30; i++)
             {
                 if (i % 5 == 0)
@@ -34,7 +34,6 @@ namespace BFS_c_sharp
                     users[i].AddFriend(friendUser);
                 }
             }
-
             return users;
         }
 
